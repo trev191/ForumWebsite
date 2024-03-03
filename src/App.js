@@ -1,6 +1,7 @@
 import './App.css';
 import Title from './components/Title';
 import SearchBar from './components/SearchBar';
+import FilterBar from './components/FilterBar';
 
 const titleStr = "Forum";
 
@@ -10,6 +11,7 @@ function App() {
       <div className="App-header">
         <Title title={titleStr}/>
         <SearchBar />
+        <FilterBar />
       </div>
     </div>
   );
