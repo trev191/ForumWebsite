@@ -13,7 +13,7 @@ function buildPostList() {
   )
 }
 
-function Posts() {
+function Posts({ searchText }) {
   const [postList, setPostList] = useState(null)
 
   useEffect(() => {
@@ -23,6 +23,7 @@ function Posts() {
   return (
     <div className="PostList">
       {postList}
+      {searchText}
     </div>
   )
 }
